@@ -14,6 +14,10 @@ When('creating a new Personal Account with the following details:', (dataTable) 
     createAccountScreen.inputRequiredFields(dataTable);
 });
 
-Then('a previously created account should be displayed upon searching', () =>{
+When('i search the previously created account', () =>{
     search.searchByAccount();
+});
+
+Then('a previously created account should be displayed upon searching', () =>{
+    search.verifyAccount();
 });
