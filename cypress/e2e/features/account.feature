@@ -16,4 +16,5 @@ Scenario: Account Creation
         | state         | AZ                  |
         | zip           | 85001               |
         | addressType   | Home                |
+    And i search the previously created account
     Then a previously created account should be displayed upon searching
