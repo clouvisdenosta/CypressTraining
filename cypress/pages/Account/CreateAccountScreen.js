@@ -1,6 +1,6 @@
-import testdata from "../../utils/testdata";
 import { AccountFileSummary } from "./AccountFileSummary";
 const accountFileSummary = new AccountFileSummary();
+import examples from "../../fixtures/example.json";
 
 export class CreateAccountScreen {
     elements = {
@@ -31,8 +31,9 @@ export class CreateAccountScreen {
         this.elements.organizationSearchResults().find('div[id$=-_Select]').click();
         this.elements.producerCode().find('select').select("Standard Code Internal Producer Code - 1");
         this.elements.update().click();
-        testdata.accountNumber = accountFileSummary.elements.accountNumber().find('.gw-value-readonly-wrapper').invoke('text');
-        cy.log(testdata.accountNumber);
-        // cy.pause();
+        accountFileSummary.elements.accountNumber().invoke('text').then((myValue) =>{
+            cy.log(myValue);
+            examples.accountNumber = myValue;
+        });
     }    
 }
