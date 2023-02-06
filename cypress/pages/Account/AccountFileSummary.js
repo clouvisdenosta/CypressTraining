@@ -1,7 +1,5 @@
-import testdata from "../../utils/testdata";
 import { TabBar } from "../TabBar/TabBar";
 const tabBar = new TabBar();
-
 export class AccountFileSummary {
 
     elements = {
