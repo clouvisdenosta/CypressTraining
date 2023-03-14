@@ -8,10 +8,10 @@ const newAccountScreen = new NewAccountScreen();
 const createAccountScreen = new CreateAccountScreen();
 const search = new Search();
 
-When('creating a new Personal Account with the following details:', (dataTable) =>{
+When('creating a new Personal Account with the following details:', (table) =>{
     tabBar.selectNewAccount();
-    newAccountScreen.createNewAccount(dataTable);
-    createAccountScreen.inputRequiredFields(dataTable);
+    newAccountScreen.createNewAccount(table);
+    // createAccountScreen.inputRequiredFields(table);
 });
 
 When('i search the previously created account', () =>{

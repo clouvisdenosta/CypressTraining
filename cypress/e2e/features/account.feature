@@ -8,7 +8,7 @@ Background:
 
 Scenario: Account Creation
     When creating a new Personal Account with the following details:
-        | firstName     | Den                 |
+        | firstName     | Jig                 |
         | lastName      | Denosta             |
         | email         | clouvis@yahoo.com   |
         | address1      | 3571 Burnside Court |
