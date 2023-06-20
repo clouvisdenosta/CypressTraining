@@ -16,8 +16,8 @@ module.exports = defineConfig({
 
       return config;
     },
-    specPattern: "cypress/e2e/features/*.feature",
-    baseUrl: "http://localhost:8180/pc/PolicyCenter.do",
+    specPattern: "cypress/e2e/behavior/features/**/*.feature",
+    baseUrl: "http://3.17.237.109:8180/pc/PolicyCenter.do",
     chromeWebSecurity: false,
   },
 });
