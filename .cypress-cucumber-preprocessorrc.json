@@ -1,11 +1,16 @@
 {
         "json": {
             "enabled": true,
-            "output" : "jsonreport/test.json"
+            "output" : "jsonreport/test.json",
+            "formater": "cucumber-json-formatter.exe"
+        },
+        "messages": {
+                "enabled": true,
+                "output": "jsonreport/messages.ndjson"
         },
         "stepDefinitions": [
                 "[filepath]/**/*.{js,ts}",
                 "[filepath].{js,ts}",
-                "cypress/e2e/behavior/step_definitions/*.{js,ts}"
+                "cypress/e2e/behavior/step_definitions/**/*.{js,ts}"
         ]
 }
