@@ -50,5 +50,7 @@ module.exports = {
     questions: ["Do/Have past, present, or discontinued operations involve(d) storing, treating, discharging, applying, disposing or transporting of hazardous material? (e.g. landfills, wastes, fuel tanks, etc)", "Is there a labor interchange with any other business/subsidiary?", "Any tax liens or bankruptcy within the last 5 years?"],
     permission: "",
     permissionFindResult: "false",
-    user: ""
+    user: "",
+    accountFirstname: "",
+    accountLastname: ""
 };
