@@ -19,5 +19,8 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/behavior/features/**/*.feature",
     baseUrl: "http://3.17.237.109:8180/pc/PolicyCenter.do",
     chromeWebSecurity: false,
+    "viewportWidth": 1280,
+    "viewportHeight": 720,
+    pageLoadTimeout: 70000
   },
 });
