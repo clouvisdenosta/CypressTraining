@@ -21,3 +21,7 @@ Then('the {string} is found', identifier => {
 Then('I can find an overview of the account', () =>{
     searchScenario.viewAccountOverview();
 });
+
+When("I search for that account with the account holder's first and last name", () => {
+    searchScenario.searchByFirstAndLastName();
+});
